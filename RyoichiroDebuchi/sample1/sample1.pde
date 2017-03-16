@@ -1,14 +1,21 @@
 //Processing[BETA] sample program 1
 //written by Ryoichiro Debuchi 2007
 
+final int WINDOW_WIDTH  = 300;
+final int WINDOW_HEIGHT = 300;
+
 float X;  //X位置
 float Y;  //Y位置
 float Speed; //スピード
 float YMove; //Yの移動量
 
+void settings(){
+  size(WINDOW_WIDTH,WINDOW_HEIGHT);
+}
+
 void setup()
 {
-  size(300, 300);
+//  size(300, 300);
   colorMode(RGB, 100);
   background(100);
   rectMode(CENTER);
