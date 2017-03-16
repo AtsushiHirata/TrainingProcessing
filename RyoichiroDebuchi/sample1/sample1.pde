@@ -15,7 +15,6 @@ void settings(){
 
 void setup()
 {
-//  size(300, 300);
   colorMode(RGB, 100);
   background(100);
   rectMode(CENTER);
