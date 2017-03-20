@@ -3,7 +3,7 @@
 
 final int WINDOW_WIDTH  = 300;
 final int WINDOW_HEIGHT = 300;
-final int MAX_COLOR_RANGE = 100;
+final int MAX_COLOR_RANGE = 255;
 
 float X;  //X位置
 float Y;  //Y位置
@@ -17,7 +17,7 @@ void settings(){
 void setup()
 {
   colorMode(RGB, MAX_COLOR_RANGE);
-  background(100);
+  background(MAX_COLOR_RANGE);
   rectMode(CENTER);
   frameRate(30);
   X = 0;
@@ -29,7 +29,7 @@ void setup()
 void draw()
 {
   //fadeToWhite();  //フェードアウト効果をつける場合
-  background(100);  //背景を塗りつぶす場合はこっちを使う
+  background(MAX_COLOR_RANGE);
   X = X + Speed;
   if(X >= width)    //もしもXが画面幅を超えたら…
   {
