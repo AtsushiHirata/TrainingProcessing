@@ -3,6 +3,7 @@
 
 final int WINDOW_WIDTH  = 300;
 final int WINDOW_HEIGHT = 300;
+final int MAX_COLOR_RANGE = 100;
 
 float X;  //X位置
 float Y;  //Y位置
@@ -15,7 +16,7 @@ void settings(){
 
 void setup()
 {
-  colorMode(RGB, 100);
+  colorMode(RGB, MAX_COLOR_RANGE);
   background(100);
   rectMode(CENTER);
   frameRate(30);
